@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #052823;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: #092c27;
+}
+header .nav-bar * {
+  background-color: #092c27;
+}
+header .logo {
+  margin-right: auto;
+}
+header .nav__links {
+  list-style: none;
+}
+header .nav__links li {
+  display: inline-block;
+  padding: 0px 20px;
+}

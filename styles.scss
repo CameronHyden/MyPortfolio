@@ -4,21 +4,28 @@
     background-color:rgb(5, 40, 35)
 }
 
-header{
+header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 30px 10%;
-
+    background-color: rgb(9, 44, 39);
+    
+    .nav-bar *{
+        background-color: rgb(9, 44, 39);
+    }
     .logo{
       margin-right: auto;  
     }
     .nav__links{
         list-style: none;
+       
     }
     .nav__links li{
         display: inline-block;
         padding: 0px 20px;
+        
+      
     
 
     }
