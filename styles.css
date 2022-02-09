@@ -93,7 +93,6 @@ header .navbar .navbar__links ul li a {
   gap: 1rem;
   width: 90%;
   margin: 0 auto;
-  height: 50vh;
   border: 2px solid red;
 }
 @media screen and (max-width: 768px) {
@@ -115,13 +114,15 @@ header .navbar .navbar__links ul li a {
   background-color: #eeff00;
 }
 .web__grid .grid__item {
-  color: purple;
+  display: flex;
 }
 .web__grid .grid__item--one {
   grid-area: one;
 }
 .web__grid .grid__item--two {
   grid-area: two;
+  justify-content: center;
+  padding: 5% 0;
 }
 .web__grid .grid__item--three {
   grid-area: three;
@@ -152,4 +153,15 @@ header .navbar .navbar__links ul li a {
 }
 .web__grid .grid__item--twelve {
   grid-area: twelve;
+}
+
+h1 {
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+  margin-top: 10%;
+}
+
+#homepage__image {
+  width: 80%;
 }

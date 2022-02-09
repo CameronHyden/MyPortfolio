@@ -95,7 +95,6 @@ header{
     gap: 1rem; 
     width: 90%;
     margin: 0 auto;
-    height: 50vh;
     border: 2px solid red;
     
     @media screen and (max-width: 768px){
@@ -135,13 +134,18 @@ header{
     }
     
     .grid__item{
-        color: purple;
+        display: flex;
+        
 
     &--one{
         grid-area: one;
+
     }
     &--two{
         grid-area: two;
+        justify-content: center;
+        padding: 5% 0;
+    
     }
     &--three{
         grid-area: three;
@@ -175,4 +179,15 @@ header{
     }
 
   }
+}
+h1{
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    margin-top: 10%;
+}
+#homepage__image{
+    width: 80%;
+
+    
 }
