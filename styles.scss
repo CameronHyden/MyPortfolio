@@ -1,8 +1,7 @@
-
-*{background-color:rgb(5, 40, 35)
-
-    }
- 
+*{
+    box-sizing: border-box;
+}
+// nav bar styles 
 header{
     margin: 0;
     padding: 0;
@@ -76,4 +75,104 @@ header{
 }
 .navbar__links li:hover{
     background-color: green;
+}
+
+// .homepage{
+//     display: flex;
+//     align-items: center;
+// }
+
+// grid styles for website
+.web__grid{
+    display: grid;
+    grid-template-columns: repeat(3,fr);
+    grid-template-areas:
+        "one two two"
+        "three four four"
+        "five six seven" 
+        "eight nine ten"
+        "eleven eleven twelve";
+    gap: 1rem; 
+    width: 90%;
+    margin: 0 auto;
+    height: 50vh;
+    border: 2px solid red;
+    
+    @media screen and (max-width: 768px){
+        grid-template-columns: repeat(1,fr);
+        grid-template-areas: 
+        "one two"
+        "three four"
+        "five six"
+        "seven eight"
+        "nine ten"
+        "eleven twelve"
+        ;
+    }
+    @media screen and (max-width: 400px){
+        grid-template-columns: repeat(2,fr);
+        grid-template-areas: 
+        "one"
+        "two"
+        "three"
+        "four"
+        "five"
+        "six"
+        "seven"
+        "eight"
+        "nine"
+        "ten"
+        "eleven"
+        "twelve"
+        ;
+    }
+
+    .grid__item:nth-child(odd){
+        background-color: blue;
+    }
+    .grid__item:nth-child(even){
+        background-color: rgb(238, 255, 0);
+    }
+    
+    .grid__item{
+        color: purple;
+
+    &--one{
+        grid-area: one;
+    }
+    &--two{
+        grid-area: two;
+    }
+    &--three{
+        grid-area: three;
+    }
+    &--four{
+        grid-area: four;
+    }
+    &--five{
+        grid-area: five;
+    }
+    &--six{
+        grid-area: six;
+    }
+    &--seven{
+        grid-area: seven;
+    }
+    &--eight{
+        grid-area: eight;
+    }
+    &--nine{
+        grid-area: nine;
+    }
+    &--ten{
+        grid-area: ten;
+    }
+    &--eleven{
+        grid-area: eleven;
+    }
+    &--twelve{
+        grid-area: twelve;
+    }
+
+  }
 }

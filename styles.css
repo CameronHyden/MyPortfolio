@@ -1,5 +1,5 @@
 * {
-  background-color: #052823;
+  box-sizing: border-box;
 }
 
 header {
@@ -84,4 +84,72 @@ header .navbar .navbar__links ul li a {
 
 .navbar__links li:hover {
   background-color: green;
+}
+
+.web__grid {
+  display: grid;
+  grid-template-columns: repeat(3, fr);
+  grid-template-areas: "one two two" "three four four" "five six seven" "eight nine ten" "eleven eleven twelve";
+  gap: 1rem;
+  width: 90%;
+  margin: 0 auto;
+  height: 50vh;
+  border: 2px solid red;
+}
+@media screen and (max-width: 768px) {
+  .web__grid {
+    grid-template-columns: repeat(1, fr);
+    grid-template-areas: "one two" "three four" "five six" "seven eight" "nine ten" "eleven twelve";
+  }
+}
+@media screen and (max-width: 400px) {
+  .web__grid {
+    grid-template-columns: repeat(2, fr);
+    grid-template-areas: "one" "two" "three" "four" "five" "six" "seven" "eight" "nine" "ten" "eleven" "twelve";
+  }
+}
+.web__grid .grid__item:nth-child(odd) {
+  background-color: blue;
+}
+.web__grid .grid__item:nth-child(even) {
+  background-color: #eeff00;
+}
+.web__grid .grid__item {
+  color: purple;
+}
+.web__grid .grid__item--one {
+  grid-area: one;
+}
+.web__grid .grid__item--two {
+  grid-area: two;
+}
+.web__grid .grid__item--three {
+  grid-area: three;
+}
+.web__grid .grid__item--four {
+  grid-area: four;
+}
+.web__grid .grid__item--five {
+  grid-area: five;
+}
+.web__grid .grid__item--six {
+  grid-area: six;
+}
+.web__grid .grid__item--seven {
+  grid-area: seven;
+}
+.web__grid .grid__item--eight {
+  grid-area: eight;
+}
+.web__grid .grid__item--nine {
+  grid-area: nine;
+}
+.web__grid .grid__item--ten {
+  grid-area: ten;
+}
+.web__grid .grid__item--eleven {
+  grid-area: eleven;
+}
+.web__grid .grid__item--twelve {
+  grid-area: twelve;
 }
