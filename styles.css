@@ -89,7 +89,7 @@ header .navbar .navbar__links ul li a {
 .web__grid {
   display: grid;
   grid-template-columns: repeat(3, fr);
-  grid-template-areas: "one two two" "three four four" "five six seven" "eight nine ten" "eleven eleven twelve";
+  grid-template-areas: "one two two" "three four four" "five six seven" "eight nine ten" "eleven eleven eleven";
   gap: 1rem;
   width: 90%;
   margin: 0 auto;
@@ -98,13 +98,13 @@ header .navbar .navbar__links ul li a {
 @media screen and (max-width: 768px) {
   .web__grid {
     grid-template-columns: repeat(1, fr);
-    grid-template-areas: "one two" "three four" "five six" "seven eight" "nine ten" "eleven twelve";
+    grid-template-areas: "one two" "three four" "five six" "seven eight" "nine ten" "eleven eleven";
   }
 }
 @media screen and (max-width: 400px) {
   .web__grid {
     grid-template-columns: repeat(2, fr);
-    grid-template-areas: "one" "two" "three" "four" "five" "six" "seven" "eight" "nine" "ten" "eleven" "twelve";
+    grid-template-areas: "one" "two" "three" "four" "five" "six" "seven" "eight" "nine" "ten" "eleven";
   }
 }
 .web__grid .grid__item:nth-child(odd) {
@@ -172,9 +172,7 @@ header .navbar .navbar__links ul li a {
 }
 .web__grid .grid__item--eleven {
   grid-area: eleven;
-}
-.web__grid .grid__item--twelve {
-  grid-area: twelve;
+  justify-content: center;
 }
 
 h1 {

@@ -87,7 +87,7 @@ header{
         "three four four"
         "five six seven" 
         "eight nine ten"
-        "eleven eleven twelve";
+        "eleven eleven eleven";
     gap: 1rem; 
     width: 90%;
     margin: 0 auto;
@@ -101,7 +101,7 @@ header{
         "five six"
         "seven eight"
         "nine ten"
-        "eleven twelve"
+        "eleven eleven"
         ;
     }
     @media screen and (max-width: 400px){
@@ -118,7 +118,6 @@ header{
         "nine"
         "ten"
         "eleven"
-        "twelve"
         ;
     }
 
@@ -190,10 +189,12 @@ header{
     }
     &--eleven{
         grid-area: eleven;
+        justify-content: center;
+        
     }
-    &--twelve{
-        grid-area: twelve;
-    }
+    // &--twelve{
+    //     grid-area: twelve;
+    // }
 
   }
 }
