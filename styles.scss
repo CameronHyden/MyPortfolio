@@ -77,10 +77,6 @@ header{
     background-color: green;
 }
 
-// .homepage{
-//     display: flex;
-//     align-items: center;
-// }
 
 // grid styles for website
 .web__grid{
@@ -145,31 +141,52 @@ header{
         grid-area: two;
         justify-content: center;
         padding: 5% 0;
-    
+        #homepage__image{
+            width: 80%;  
+        }
     }
     &--three{
         grid-area: three;
+        justify-content: center;
+        padding: 5% 0;
+        #myPicture{
+            width: 80%;
+        }
     }
     &--four{
-        grid-area: four;
+        grid-area: four; 
+        justify-content: center;
+        padding: 5% 0;
     }
     &--five{
         grid-area: five;
+        justify-content: center;
+        padding: 5% 0;
     }
     &--six{
         grid-area: six;
+        justify-content: center;
+        padding: 5% 0;
     }
     &--seven{
         grid-area: seven;
+        justify-content: center;
+        padding: 5% 0;
     }
     &--eight{
         grid-area: eight;
+        justify-content: center;
+        padding: 5% 0;
     }
     &--nine{
         grid-area: nine;
+        justify-content: center;
+        padding: 5% 0;
     }
     &--ten{
         grid-area: ten;
+        justify-content: center;
+        padding: 5% 0;
     }
     &--eleven{
         grid-area: eleven;
@@ -185,9 +202,4 @@ h1{
     text-align: center;
     color: white;
     margin-top: 10%;
-}
-#homepage__image{
-    width: 80%;
-
-    
 }

@@ -124,29 +124,51 @@ header .navbar .navbar__links ul li a {
   justify-content: center;
   padding: 5% 0;
 }
+.web__grid .grid__item--two #homepage__image {
+  width: 80%;
+}
 .web__grid .grid__item--three {
   grid-area: three;
+  justify-content: center;
+  padding: 5% 0;
+}
+.web__grid .grid__item--three #myPicture {
+  width: 80%;
 }
 .web__grid .grid__item--four {
   grid-area: four;
+  justify-content: center;
+  padding: 5% 0;
 }
 .web__grid .grid__item--five {
   grid-area: five;
+  justify-content: center;
+  padding: 5% 0;
 }
 .web__grid .grid__item--six {
   grid-area: six;
+  justify-content: center;
+  padding: 5% 0;
 }
 .web__grid .grid__item--seven {
   grid-area: seven;
+  justify-content: center;
+  padding: 5% 0;
 }
 .web__grid .grid__item--eight {
   grid-area: eight;
+  justify-content: center;
+  padding: 5% 0;
 }
 .web__grid .grid__item--nine {
   grid-area: nine;
+  justify-content: center;
+  padding: 5% 0;
 }
 .web__grid .grid__item--ten {
   grid-area: ten;
+  justify-content: center;
+  padding: 5% 0;
 }
 .web__grid .grid__item--eleven {
   grid-area: eleven;
@@ -160,8 +182,4 @@ h1 {
   text-align: center;
   color: white;
   margin-top: 10%;
-}
-
-#homepage__image {
-  width: 80%;
 }
