@@ -88,7 +88,7 @@ header .navbar .navbar__links ul li a {
 }
 
 .navbar__links li:hover {
-  background-color: purple;
+  background-color: #3B5652;
 }
 
 .web__grid {
@@ -161,6 +161,8 @@ header .navbar .navbar__links ul li a {
   background-color: #052823;
   margin: 5%;
   filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.5));
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
 }
 .web__grid .grid__item--five .projects__image {
   width: 60%;
@@ -171,6 +173,8 @@ header .navbar .navbar__links ul li a {
   padding: 5% 0;
   background-color: #052823;
   margin: 5%;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
   filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.5));
 }
 .web__grid .grid__item--six .projects__image {
@@ -182,6 +186,8 @@ header .navbar .navbar__links ul li a {
   padding: 5% 0;
   background-color: #052823;
   margin: 5%;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
   filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.5));
 }
 .web__grid .grid__item--seven .projects__image {
@@ -193,6 +199,8 @@ header .navbar .navbar__links ul li a {
   padding: 5% 0;
   background-color: #052823;
   margin: 5%;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
   filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.5));
 }
 .web__grid .grid__item--eight .projects__image {
@@ -204,6 +212,8 @@ header .navbar .navbar__links ul li a {
   padding: 5% 0;
   background-color: #052823;
   margin: 5%;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
   filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.5));
 }
 .web__grid .grid__item--nine .projects__image {
@@ -215,6 +225,8 @@ header .navbar .navbar__links ul li a {
   padding: 5% 0;
   background-color: #052823;
   margin: 5%;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
   filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.5));
 }
 .web__grid .grid__item--ten .projects__image {
@@ -223,6 +235,10 @@ header .navbar .navbar__links ul li a {
 .web__grid .grid__item--eleven {
   grid-area: eleven;
   justify-content: center;
+}
+
+#project-link:hover {
+  opacity: 1;
 }
 
 .grid__contact {
