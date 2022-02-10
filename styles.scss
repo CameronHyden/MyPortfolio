@@ -99,7 +99,7 @@ header{
 
     
     @media screen and (max-width: 768px){
-        grid-template-columns: repeat(1,fr);
+        grid-template-columns: repeat(2,1fr);
         grid-template-areas: 
         "one two"
         "three four"
@@ -108,7 +108,7 @@ header{
         "nine ten";
     }
     @media screen and (max-width: 400px){
-        grid-template-columns: repeat(2,fr);
+        grid-template-columns: repeat(1,1fr);
         grid-template-areas: 
         "one"
         "two"
@@ -248,15 +248,21 @@ header{
   }
 }
 // layout for contact page
-.grid__contact{
+    .grid__contact{
     display: flex;
     justify-content: center;
     margin-top: 20%;
+    margin-bottom: 5%;
 
     .contact{
         display: grid;
         grid-template-columns: 1fr 2fr;
         grid-gap: 10px;
+        @media screen and (max-width: 400px){
+            grid-template-columns: 1fr;
+            
+           
+        }
     }
 }
 

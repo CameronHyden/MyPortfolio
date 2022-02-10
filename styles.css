@@ -100,13 +100,13 @@ header .navbar .navbar__links ul li a {
 }
 @media screen and (max-width: 768px) {
   .web__grid {
-    grid-template-columns: repeat(1, fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "one two" "three four" "five six" "seven eight" "nine ten";
   }
 }
 @media screen and (max-width: 400px) {
   .web__grid {
-    grid-template-columns: repeat(2, fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-template-areas: "one" "two" "three" "four" "five" "six" "seven" "eight" "nine" "ten";
   }
 }
@@ -229,9 +229,15 @@ header .navbar .navbar__links ul li a {
   display: flex;
   justify-content: center;
   margin-top: 20%;
+  margin-bottom: 5%;
 }
 .grid__contact .contact {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-gap: 10px;
+}
+@media screen and (max-width: 400px) {
+  .grid__contact .contact {
+    grid-template-columns: 1fr;
+  }
 }
