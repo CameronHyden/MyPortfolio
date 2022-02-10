@@ -95,19 +95,19 @@ header .navbar .navbar__links ul li a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   row-gap: 30vh;
-  grid-template-areas: "one two two" "three four four" "five six seven" "eight nine ten" "eleven eleven eleven";
+  grid-template-areas: "one two two" "three four four" "five six seven" "eight nine ten";
   margin-inline: 0 auto;
 }
 @media screen and (max-width: 768px) {
   .web__grid {
     grid-template-columns: repeat(1, fr);
-    grid-template-areas: "one two" "three four" "five six" "seven eight" "nine ten" "eleven eleven";
+    grid-template-areas: "one two" "three four" "five six" "seven eight" "nine ten";
   }
 }
 @media screen and (max-width: 400px) {
   .web__grid {
     grid-template-columns: repeat(2, fr);
-    grid-template-areas: "one" "two" "three" "four" "five" "six" "seven" "eight" "nine" "ten" "eleven";
+    grid-template-areas: "one" "two" "three" "four" "five" "six" "seven" "eight" "nine" "ten";
   }
 }
 .web__grid .grid__item {
@@ -223,4 +223,15 @@ header .navbar .navbar__links ul li a {
 .web__grid .grid__item--eleven {
   grid-area: eleven;
   justify-content: center;
+}
+
+.grid__contact {
+  display: flex;
+  justify-content: center;
+  margin-top: 20%;
+}
+.grid__contact .contact {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 10px;
 }

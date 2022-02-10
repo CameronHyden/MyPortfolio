@@ -93,8 +93,7 @@ header{
         "one two two"
         "three four four"
         "five six seven" 
-        "eight nine ten"
-        "eleven eleven eleven";
+        "eight nine ten";
     margin-inline: 0 auto;
     
 
@@ -106,9 +105,7 @@ header{
         "three four"
         "five six"
         "seven eight"
-        "nine ten"
-        "eleven eleven"
-        ;
+        "nine ten";
     }
     @media screen and (max-width: 400px){
         grid-template-columns: repeat(2,fr);
@@ -122,9 +119,7 @@ header{
         "seven"
         "eight"
         "nine"
-        "ten"
-        "eleven"
-        ;
+        "ten";
     }
     // grid styles
     .grid__item{
@@ -251,6 +246,17 @@ header{
         justify-content: center;   
     }
   }
+}
+// layout for contact page
+.grid__contact{
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
 
+    .contact{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 10px;
+    }
 }
 
