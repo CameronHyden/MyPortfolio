@@ -228,8 +228,9 @@ header .navbar .navbar__links ul li a {
 .grid__contact {
   display: flex;
   justify-content: center;
-  margin-top: 20%;
-  margin-bottom: 5%;
+  margin-top: 15%;
+  padding-bottom: 10%;
+  color: white;
 }
 .grid__contact .contact {
   display: grid;
