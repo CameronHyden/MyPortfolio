@@ -98,7 +98,6 @@ header .navbar .navbar__links ul li a {
   grid-template-areas: "one two two" "three four four" "five six seven" "eight nine ten" "eleven eleven eleven";
   margin-inline: 0 auto;
   width: 100%;
-  border: 2px solid red;
 }
 @media screen and (max-width: 768px) {
   .web__grid {
@@ -117,8 +116,14 @@ header .navbar .navbar__links ul li a {
 }
 .web__grid .grid__item--one {
   grid-area: one;
-  justify-content: center;
-  text-align: justify;
+  font-family: poppins, san-serif;
+  color: #f5efef;
+}
+.web__grid .grid__item--one h1 {
+  font-size: 1.5rem;
+  padding-top: 20%;
+  padding-left: 10%;
+  text-align: center;
 }
 .web__grid .grid__item--two {
   grid-area: two;
@@ -126,7 +131,7 @@ header .navbar .navbar__links ul li a {
   padding: 5% 0;
 }
 .web__grid .grid__item--two #homepage__image {
-  width: 80%;
+  width: 70%;
 }
 .web__grid .grid__item--three {
   grid-area: three;
@@ -139,10 +144,14 @@ header .navbar .navbar__links ul li a {
 .web__grid .grid__item--four {
   grid-area: four;
   justify-content: center;
-  padding: 10% 20% 0 20%;
-  padding-top: 2;
-  font-size: 1rem;
+  align-items: center;
+  font-size: 1em;
   font-family: open-sans, san-serif;
+  color: #f5efef;
+  padding: 0 10%;
+}
+.web__grid .grid__item--four p {
+  line-height: 1.5;
 }
 .web__grid .grid__item--five {
   grid-area: five;
@@ -177,12 +186,4 @@ header .navbar .navbar__links ul li a {
 .web__grid .grid__item--eleven {
   grid-area: eleven;
   justify-content: center;
-}
-
-h1 {
-  font-size: 2rem;
-  color: #0a0101;
-  margin-top: 40%;
-  padding-left: 15%;
-  font-family: poppins, san-serif;
 }
