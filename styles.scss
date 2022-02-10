@@ -84,10 +84,10 @@ header{
 }
 
 
-// grid styles for website
+// grid layout for website
 .web__grid{
     display: grid;
-    grid-template-columns: repeat(3,fr);
+    grid-template-columns: repeat(3,1fr);
     row-gap: 30vh;
     grid-template-areas:
         "one two two"
@@ -96,7 +96,7 @@ header{
         "eight nine ten"
         "eleven eleven eleven";
     margin-inline: 0 auto;
-    width: 100%;
+    
 
     
     @media screen and (max-width: 768px){
@@ -126,14 +126,7 @@ header{
         "eleven"
         ;
     }
-
-    // .grid__item:nth-child(odd){
-    //     background-color: blue;
-    // }
-    // .grid__item:nth-child(even){
-    //     background-color: rgb(238, 255, 0);
-    // }
-    
+    // grid styles
     .grid__item{
         display: flex;
         
@@ -174,6 +167,8 @@ header{
         font-family: $secondary-font;
         color: #f5efef;
         padding: 0 10%;
+        background-color: #3B5652;
+        margin: 0 10%;
         p{
             line-height: 1.5;
         }
@@ -182,31 +177,73 @@ header{
         grid-area: five;
         justify-content: center;
         padding: 5% 0;
+        background-color: #052823;
+        margin: 5%;
+        filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.50));
+
+        .projects__image{
+            width: 60%;
+        }
     }
     &--six{
         grid-area: six;
         justify-content: center;
         padding: 5% 0;
+        background-color: #052823;
+        margin: 5%;
+        filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.50));
+
+        .projects__image{
+            width: 60%;
+        }
     }
     &--seven{
         grid-area: seven;
         justify-content: center;
         padding: 5% 0;
+        background-color: #052823;
+        margin: 5%;
+        filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.50));
+
+        .projects__image{
+            width: 60%;
+        }
     }
     &--eight{
         grid-area: eight;
         justify-content: center;
         padding: 5% 0;
+        background-color: #052823;
+        margin: 5%;
+        filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.50));
+
+        .projects__image{
+            width: 60%;
+        }
     }
     &--nine{
         grid-area: nine;
         justify-content: center;
         padding: 5% 0;
+        background-color: #052823;
+        margin: 5%;
+        filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.50));
+
+        .projects__image{
+            width: 60%;
+        }
     }
     &--ten{
         grid-area: ten;
         justify-content: center;
         padding: 5% 0;
+        background-color: #052823;
+        margin: 5%;
+        filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.50));
+
+        .projects__image{
+            width: 60%;
+        } 
     }
     &--eleven{
         grid-area: eleven;
