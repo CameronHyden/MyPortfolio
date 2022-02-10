@@ -2,14 +2,19 @@
   box-sizing: border-box;
 }
 
+main {
+  background-color: #062c22;
+}
+
 header {
   margin: 0;
   padding: 0;
+  font-family: poppins, san-serif;
 }
 header .navbar {
   display: flex;
   justify-content: space-between;
-  background-color: #333;
+  background-color: #062c22;
   color: white;
 }
 @media screen and (max-width: 400px) {
@@ -83,16 +88,16 @@ header .navbar .navbar__links ul li a {
 }
 
 .navbar__links li:hover {
-  background-color: green;
+  background-color: purple;
 }
 
 .web__grid {
   display: grid;
   grid-template-columns: repeat(3, fr);
+  row-gap: 30vh;
   grid-template-areas: "one two two" "three four four" "five six seven" "eight nine ten" "eleven eleven eleven";
-  gap: 1rem;
-  width: 90%;
-  margin: 0 auto;
+  margin-inline: 0 auto;
+  width: 100%;
   border: 2px solid red;
 }
 @media screen and (max-width: 768px) {
@@ -107,17 +112,13 @@ header .navbar .navbar__links ul li a {
     grid-template-areas: "one" "two" "three" "four" "five" "six" "seven" "eight" "nine" "ten" "eleven";
   }
 }
-.web__grid .grid__item:nth-child(odd) {
-  background-color: blue;
-}
-.web__grid .grid__item:nth-child(even) {
-  background-color: #eeff00;
-}
 .web__grid .grid__item {
   display: flex;
 }
 .web__grid .grid__item--one {
   grid-area: one;
+  justify-content: center;
+  text-align: justify;
 }
 .web__grid .grid__item--two {
   grid-area: two;
@@ -133,12 +134,15 @@ header .navbar .navbar__links ul li a {
   padding: 5% 0;
 }
 .web__grid .grid__item--three #myPicture {
-  width: 80%;
+  width: 50%;
 }
 .web__grid .grid__item--four {
   grid-area: four;
   justify-content: center;
-  padding: 5% 0;
+  padding: 10% 20% 0 20%;
+  padding-top: 2;
+  font-size: 1rem;
+  font-family: open-sans, san-serif;
 }
 .web__grid .grid__item--five {
   grid-area: five;
@@ -176,8 +180,9 @@ header .navbar .navbar__links ul li a {
 }
 
 h1 {
-  font-size: 1rem;
-  text-align: center;
-  color: white;
-  margin-top: 10%;
+  font-size: 2rem;
+  color: #0a0101;
+  margin-top: 40%;
+  padding-left: 15%;
+  font-family: poppins, san-serif;
 }
