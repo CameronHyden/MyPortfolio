@@ -289,11 +289,17 @@ header{
     .grid__contact{
     display: flex;
     justify-content: center;
-    margin-top: 15%;
+    margin-top: 10%;
     padding-bottom: 10%;
+    height: 55vh;
     color: white;
-
+    font-family: $secondary-font;
+    font-size: 1.2rem;
+    @media screen and (max-width: 400px){
+        height: auto;
+    }
      .contact{
+        width: 35%;
         display: grid;
         grid-template-columns: 1fr 2fr; 
         grid-gap: 10px;

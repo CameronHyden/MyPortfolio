@@ -272,11 +272,20 @@ header .navbar .navbar__links ul li a {
 .grid__contact {
   display: flex;
   justify-content: center;
-  margin-top: 15%;
+  margin-top: 10%;
   padding-bottom: 10%;
+  height: 55vh;
   color: white;
+  font-family: open-sans, san-serif;
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 400px) {
+  .grid__contact {
+    height: auto;
+  }
 }
 .grid__contact .contact {
+  width: 35%;
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-gap: 10px;
