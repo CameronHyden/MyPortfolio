@@ -120,9 +120,24 @@ header .navbar .navbar__links ul li a {
 }
 .web__grid .grid__item--one h1 {
   font-size: 1.5rem;
-  padding-top: 20%;
-  padding-left: 10%;
+  padding-top: 30%;
+  padding-left: 4vw;
+  margin-left: 4vw;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .web__grid .grid__item--one h1 {
+    padding-top: 10%;
+    margin-top: 15%;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .web__grid .grid__item--one h1 {
+    padding-left: 4vw;
+    padding-right: 4vw;
+    margin-left: 0;
+  }
 }
 .web__grid .grid__item--two {
   grid-area: two;
@@ -131,6 +146,19 @@ header .navbar .navbar__links ul li a {
 }
 .web__grid .grid__item--two #homepage__image {
   width: 70%;
+}
+@media screen and (max-width: 768px) {
+  .web__grid .grid__item--two {
+    margin-top: 10%;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .web__grid .grid__item--two {
+    width: 90%;
+    padding-left: 8vw;
+    margin-left: 3vw;
+  }
 }
 .web__grid .grid__item--three {
   grid-area: three;
