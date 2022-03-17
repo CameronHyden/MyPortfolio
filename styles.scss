@@ -91,13 +91,20 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   row-gap: 30vh;
+  p {
+    font-family: $primary-font;
+    color: white;
+
+    > a:visited {
+      color: pink;
+    }
+  }
   grid-template-areas:
     "one two two"
     "three four four"
     "five six seven"
     "eight nine ten";
   margin-inline: 0 auto;
-
   @media screen and (max-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
@@ -168,6 +175,7 @@ header {
       grid-area: three;
       justify-content: center;
       padding: 5% 0;
+      background-color: #3b5652;
       #myPicture {
         width: 50%;
       }
@@ -199,6 +207,7 @@ header {
       transition: opacity 0.3s ease;
       .projects__image {
         width: 60%;
+        height: 150px;
       }
     }
     &--six {
@@ -213,6 +222,7 @@ header {
 
       .projects__image {
         width: 60%;
+        height: 150px;
       }
     }
     &--seven {
@@ -227,6 +237,7 @@ header {
 
       .projects__image {
         width: 60%;
+        height: 150px;
       }
     }
     &--eight {

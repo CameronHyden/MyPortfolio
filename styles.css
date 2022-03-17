@@ -102,6 +102,13 @@ header .navbar .navbar__links ul li a {
   grid-template-areas: "one two two" "three four four" "five six seven" "eight nine ten";
   margin-inline: 0 auto;
 }
+.web__grid p {
+  font-family: poppins, san-serif;
+  color: white;
+}
+.web__grid p > a:visited {
+  color: pink;
+}
 @media screen and (max-width: 768px) {
   .web__grid {
     grid-template-columns: repeat(2, 1fr);
@@ -168,6 +175,7 @@ header .navbar .navbar__links ul li a {
   grid-area: three;
   justify-content: center;
   padding: 5% 0;
+  background-color: #3b5652;
 }
 .web__grid .grid__item--three #myPicture {
   width: 50%;
@@ -198,6 +206,7 @@ header .navbar .navbar__links ul li a {
 }
 .web__grid .grid__item--five .projects__image {
   width: 60%;
+  height: 150px;
 }
 .web__grid .grid__item--six {
   grid-area: six;
@@ -211,6 +220,7 @@ header .navbar .navbar__links ul li a {
 }
 .web__grid .grid__item--six .projects__image {
   width: 60%;
+  height: 150px;
 }
 .web__grid .grid__item--seven {
   grid-area: seven;
@@ -224,6 +234,7 @@ header .navbar .navbar__links ul li a {
 }
 .web__grid .grid__item--seven .projects__image {
   width: 60%;
+  height: 150px;
 }
 .web__grid .grid__item--eight {
   grid-area: eight;
